@@ -1,0 +1,117 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.year-select {
+  width: 110px;
+  height: 40px;
+  font-size: 18px; 
+  margin-left: 100px;
+  border: 1px solid #ccc;
+}
+
+.controls {
+  margin-right: 65px;
+}
+
+.controls button {
+  margin-left: 7px;
+  padding: 5px 15px;
+  font-size: 18px;
+}
+
+table {
+  table-layout: fixed;
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th, td {
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* 이수/필수 칸 크기 */
+th:nth-child(2), td:nth-child(2), /* 이수 */
+th:nth-child(3), td:nth-child(3) { /* 필수 */
+  width: 70px;
+}
+
+/* 과목명 칸 크기 */
+th:nth-child(4), td:nth-child(4) { 
+  width: 180px; 
+}
+
+/* 학점 칸 크기 */
+th:nth-child(5), td:nth-child(5) { 
+  width: 40px; 
+}
+
+/* 출석/과제/중간/기말 칸 크기 */
+th:nth-child(6), td:nth-child(6), /* 출석 */
+th:nth-child(7), td:nth-child(7), /* 과제 */
+th:nth-child(8), td:nth-child(8), /* 중간 */
+th:nth-child(9), td:nth-child(9) { /* 기말 */
+  width: 100px; 
+}
+
+/* 총점/평균/성적 칸 크기 */
+th:nth-child(10), td:nth-child(10), /* 총점 */
+th:nth-child(11), td:nth-child(11), /* 평균 */
+th:nth-child(12), td:nth-child(12) { /* 성적 */
+  width: 40px; 
+}
+
+input, select {
+  width: 90%;
+}
+
+th, td {
+  border: 1px solid #FFFFFF;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #4F81BD; 
+  color: #ffffff;
+}
+
+td {
+  background-color: #D0D8E8; 
+}
+
+tr:nth-child(even) td {
+  background-color: #E9EDF4; /* 짝수 행 배경색 */
+}
+
+tr:nth-child(odd) td {
+  background-color: #D0D8E8; /* 홀수 행 배경색 */
+}
+
+.grade-cell {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.grade-f {
+  color: red;
+  font-weight: bold;
+}
+
+
